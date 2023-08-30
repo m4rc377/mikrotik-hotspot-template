@@ -1,0 +1,3 @@
+[submodule "dev/sub-modules/template-hotspot-mikhmon"]
+	path = dev/sub-modules/template-hotspot-mikhmon
+	url = https://github.com/laksa19/template-hotspot-mikhmon
