@@ -1,0 +1,12 @@
+/*
+ * # Mikrotik Template OriMod
+ * https://github.com/m4rc377
+ * 
+ *
+ * Copyright 2023 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+body{background:linear-gradient(270deg,#5560df,#193d3c);-webkit-animation:5s infinite waves;-moz-animation:5s infinite waves;background-size:200%;animation:5s infinite waves}@font-face{font-family:fontello;src:url('../font/fontello.eot?78273339');src:url('../font/fontello.eot?78273339#iefix') format('embedded-opentype'),url('../font/fontello.woff?78273339') format('woff'),url('../font/fontello.ttf?78273339') format('truetype'),url('../font/fontello.svg?78273339#fontello') format('svg');font-weight:400;font-style:normal}@-webkit-keyframes waves{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}@-moz-keyframes waves{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}@keyframes waves{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}h1{font-size:10rem;margin:15% auto;font-family:Signika,sans-serif;text-transform:uppercase;text-align:center;color:#cdcdcd;text-shadow:2px 2px #193d3c}
