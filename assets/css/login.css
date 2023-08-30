@@ -1,4 +1,15 @@
-.login {
+/*
+ * # Mikrotik Template OriMod
+ * https://github.com/m4rc377
+ * 
+ *
+ * Copyright 2023 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+ 
+ .login {
 	font-family: arial;
 	padding: 90px 0 0 0;
 }
