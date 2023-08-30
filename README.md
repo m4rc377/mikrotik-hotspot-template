@@ -1,2 +1,1 @@
-# mikrotik-template
-Mikrotik Collection Template
+# https://asralinside.github.io/PUBG/
