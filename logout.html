@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://uminabdillah.github.io/login/font.css" rel="stylesheet">
+    <script src="https://uminabdillah.github.io/login/alpine.js"></script>
+    <script src="https://uminabdillah.github.io/login/tailwind.js"></script>    
+    <script src="https://uminabdillah.github.io/login/jquery.js" ></script>
+    <style>
+        .fontQ{
+            font-family: 'Rubik', sans-serif
+        }
+        .rounded-custom{
+            border-bottom-left-radius: 100% 35%;
+            border-bottom-right-radius: 100% 35%;
+        }
+    </style>
+   
+<!--
+
+    Name      : Login Page Freemium #2
+    Version   : 1.0
+    Date      : 1 April 2023
+    Type      : Freemium
+    Designer  : Mumin Abdilah
+    Website   : www.uminabdilah.com | https://lapak.umin.my.id
+
+    ============================================================================
+    NOTE :
+    - Ini Theme Freemium
+    - Dapatkan template ini melalui laman https://lapak.umin.my.id
+    - Jika Anda mendapatkannya selain laman https://lapak.umin.my.id 
+      itu berarti Anda mendapatkannya secara ilegal.
+    - Anda boleh membagikan template ini dengan membagikan
+      laman https://lapak.umin.my.id bukan source code nya
+    ============================================================================
+
+-->
+</head>
+<body class="fontQ" :class="{'overflow-y-hidden': isLogin || isVoucher || isMember || isHelp || isFormBantuan}" x-data="{isLogin:false, isVoucher:false, isMember:false, isHelp:false, isFormBantuan:false}">
+    <!-- Header -->
+    <header class="sticky top-0 backdrop-opacity-95 backdrop-opacity bg-white/95 shadow-md z-30" id="top">
+        <div class="max-w-md mx-auto py-2 px-4 md:px-0 ">
+            <div class="flex justify-between items-center">
+                <div x-data="{isMenuOpen: false}" >
+                    <button  @click="isMenuOpen = ! isMenuOpen" class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                    <div class="fixed top-18 w-64 bg-white shadow-lg py-4 rounded-lg" role="dialog" tabindex="-1"  x-show="isMenuOpen" @click.outside="isMenuOpen = false" x-cloak x-transition>
+                        <div class="p-10 rounded-lg">
+                            <img src="/favicon.ico" alt="" class="rounded-lg h-20 mx-auto">
+                        </div>
+                        <div class="flex flex-col divide-y">
+                            <a href="#" class="py-4 text-center hover:bg-gray-100">
+                                Penawaran
+                            </a>
+                            <button type="button" @click="isHelp = true" class="py-4 text-center hover:bg-gray-100">
+                                Bantuan
+                            </button>
+                        </div>
+                        <div class="text-center py-3 pt-5 text-xs text-gray-500">
+                        © <span class="tahun"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full justify-center text-center">
+                    <a href="/login.html">
+                        <img src="/assets/image/logo.png" alt="Logo Lapak Umin" class="h-14 text-center mx-auto" >
+                    </a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- End Header -->
+    <main class="max-w-md mx-auto  md:px-0 min-h-screen">
+        <div class="h-64 w-full rounded-custom">
+            <h1 class="font-bold text-gray-800 text-xl text-center pt-4 mt-2">$(username) berhasil logout<br> <span class="text-2xl">$(identity)</span></h1>
+            <div class="relative top-0">
+                <img src="assets/image/Bye-amico.png" alt="" class="w-96 h-96 mx-auto"> 
+            </div>
+        </div>
+        <div class="mt-36 relative px-4 md:px-0">
+            <a href="/login.html" class="w-full bg-gray-800 p-4 flex items-center justify-center gap-1 border _shadow rounded-lg  text-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 -rotate-45">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                </svg>
+    
+                <span class="text-md tracking-wide">Kembali Login</span>           
+            </a>
+        </div>
+    </main>
+
+    <footer class="backdrop-opacity-95 backdrop-opacity bg-white/95 mt-4 border">
+        <div class="max-w-md mx-auto py-6 px-4 md:px-0 ">
+            <div class="flex w-full">
+                <div class="flex flex-col justify-start w-full">
+                    <div class="text-sm leading-4 mb-1">
+                        © <span class="tahun"></span> <span class="font-extrabold footer"></span>
+                    </div>
+                    <div class="flex gap-1 text-xs items-center">
+                        <!-- Tolong, Hargai karya kami dengan tidak menghapus copyright -->
+                        <span>dibuat oleh </span>
+                        <a class="font-bold text-orange-600" href="https://lapak.umin.my.id">Lapak Umin</a>
+                        <!-- Tolong, Hargai karya kami dengan tidak menghapus copyright -->
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-end w-1/2 gap-2">
+                    <button @click="isHelp = true" class="flex items-center p-2 px-4 rounded-lg shadow-md border transition-colors duration-300 text-gray-500 hover:text-gray-800">
+                      
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>
+                    </button>
+                    <button class="flex items-center p-2 px-4 rounded-lg shadow-md border transition-colors duration-300 text-gray-500 hover:text-gray-800" id="back2Top">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="md5.js"></script>
+    <script type="text/javascript">
+        function doLogin() {
+        document.loginvoucher.username.value = document.login.username.value;
+        document.loginvoucher.password.value = hexMD5("$(chap-id)" + document.login.password.value + "$(chap-challenge)");
+        document.loginvoucher.submit();
+        return false;
+        }
+    </script>
+</body>
+</html>
