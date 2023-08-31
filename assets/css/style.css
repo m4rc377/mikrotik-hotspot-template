@@ -4,8 +4,8 @@
  * 
  *
  * Copyright 2023 Contributors
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
+ * Released under GNU General Public License
+ * https://opensource.org/license/gpl-3-0/
  *
  */
  
@@ -17,7 +17,7 @@
   animation: waves 5s ease infinite;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'fontello';
   src: url('../font/fontello.eot?78273339');
   src: url('../font/fontello.eot?78273339#iefix') format('embedded-opentype'),
@@ -26,15 +26,7 @@
        url('../font/fontello.svg?78273339#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
-} */
-
-@font-face {
-  font-family: 'fontello';
-  src: url('../font/fontello.svg?78273339#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
-
 
 @-webkit-keyframes waves {
     0%{background-position:0% 50%}

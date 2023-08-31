@@ -4,8 +4,8 @@
  * 
  *
  * Copyright 2023 Contributors
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
+ * Released under GNU General Public License
+ * https://opensource.org/license/gpl-3-0/
  *
  */
 
