@@ -1,0 +1,5 @@
+- fix css use multiple css used
+- fix css if can not use bootstrap
+- find and remove all external url except if is copyright 
+- moving all css on page to external css (just localy not on internet)
+- fix unussed css & js
